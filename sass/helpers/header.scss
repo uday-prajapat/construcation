@@ -1,0 +1,98 @@
+.top-header-background{
+    background: var(--yellow-sads);
+    padding: 5px 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    .top-header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .address{
+            ul{
+                display: flex;
+                align-items: center;
+                li{
+                    padding-right: 20px;
+                    a{
+                        color: var(--white);
+                        img{
+                            vertical-align: middle;
+                            width: 15px;
+                        }
+                    }
+                }
+            }
+        }
+        .social-icon{
+            ul{
+                display: flex;
+                align-items: center;
+                li{
+                    padding-left: 20px;
+                    a{
+                        img{
+                            display: block;
+                            width: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.header-background{
+    background: var(--black);
+    padding: 15px 0;
+    position: fixed;
+    left: 0;
+    top: 30px;
+    width: 100%;
+    z-index: 99;
+    .header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .logo{
+
+            a{
+                img{
+                    width: 100%;
+                }
+            }
+        }
+
+        .hamburger{
+         display: none;
+        }
+        .search{
+            display: none;
+        }
+        
+        .menu ul{
+            display: flex;
+            align-items: center;
+            li{
+                &:first-child{
+                    a{
+                        color: var(--yellow);
+                   }
+                }
+                &:hover{
+                   a{
+                       color: var(--yellow);
+                    }
+                }
+                padding-left: 20px;
+                a{
+                    font-size: 16px;
+                    font-weight: 500;
+                   transition: 0.5s all ease;
+                color: var(--white);
+               }
+            }
+        }
+    }
+}
